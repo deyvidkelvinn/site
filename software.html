@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Softwares</title>
+<style>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+    color: #333;
+    line-height: 1.7;
+    padding: 20px;
+}
+
+/* Título principal */
+h1:first-of-type {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 15px;
+}
+#menu a {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+#menu a:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+}
+
+/* Seções de conteúdo */
+.so {
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.so:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Títulos das seções */
+.so h1 {
+    color: #1e3a8a;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.so h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #3b82f6;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Imagens */
+.so img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.so img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Parágrafos */
+.so p {
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+}
+.so p strong {
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .so {
+        padding: 20px;
+    }
+    .so h1 {
+        font-size: 1.7em;
+    }
+    .so img {
+        max-width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Softwares</h1>
+
+<div id="menu">
+    <a href="index.html">Início</a>
+    <a href="home.html">Home</a>
+    <a href="personalidadess.html">Personalidades</a>
+    <a href="software.html">Software</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="so.html">SO</a>
+</div>
+
+<!-- Seções de Software -->
+<div class="so">
+    <h1>O que é um software?</h1>
+    <img src="imagens/images 1.jpg" alt="Software">
+    <p>Software é um conjunto de instruções, programas e dados que comandam o funcionamento de um computador ou dispositivo eletrônico. Ele representa a parte lógica do sistema, ou seja, tudo aquilo que não é físico, diferentemente do hardware, que é a parte material. O software permite que o hardware funcione de maneira útil, executando desde operações básicas até tarefas complexas. Existem três tipos principais: o software de sistema, como os sistemas operacionais (Windows, Linux), que gerenciam os recursos do computador; o software aplicativo, como navegadores, editores de texto e jogos, que ajudam o usuário a realizar tarefas específicas; e o software de programação, como compiladores e editores de código, usados por desenvolvedores para criar novos programas. Em resumo, o software é essencial para o funcionamento de qualquer sistema computacional.</p>
+</div>
+
+<div class="so">
+    <h1>O que é um sistema operacional?</h1>
+    <img src="imagens/imagem 2.png" alt="Sistema Operacional">
+    <p>Um sistema operacional (SO) é um software essencial que gerencia todos os recursos de um computador ou dispositivo eletrônico. Ele atua como uma ponte entre o hardware (a parte física, como processador, memória e dispositivos de entrada/saída) e os usuários ou aplicativos. Sem um sistema operacional, seria extremamente difícil usar um computador, pois seria necessário controlar cada componente manualmente. As principais funções de um sistema operacional incluem o gerenciamento de processos (controla os programas em execução), gerenciamento de memória (distribui a memória RAM entre os programas), gerenciamento de dispositivos (controla periféricos como mouse, teclado e impressora), e gerenciamento de arquivos (organiza e permite o acesso aos dados armazenados). Ele também fornece uma interface de usuário, que pode ser gráfica (como no Windows e macOS) ou por linha de comando (como no Linux). Existem vários sistemas operacionais, como Windows, macOS, Linux, Android e iOS, cada um com características específicas para diferentes tipos de dispositivos. Em resumo, o sistema operacional é o software que torna possível a utilização eficiente e segura do computador, controlando o funcionamento de todo o sistema.</p>
+</div>
+
+<div class="so">
+    <h1>O que é uma licença de software?</h1>
+    <img src="imagens/imagem 11.webp" alt="Licença de Software">
+    <p>Uma licença de software é um documento legal que define os direitos e deveres do usuário em relação ao uso de um determinado programa. Ao adquirir ou baixar um software, o usuário não está comprando o programa em si, mas sim obtendo uma permissão de uso, conforme os termos estabelecidos pela licença. Existem diferentes tipos de licenças, com regras variadas. Por exemplo, a licença proprietária restringe o acesso ao código-fonte e limita a cópia, modificação e redistribuição. Já a licença de software livre (como GPL ou MIT) permite que o usuário use, modifique e distribua o software, muitas vezes com acesso ao código-fonte. Outra categoria comum é a licença freeware, onde o software é gratuito, mas os direitos de modificação e distribuição continuam restritos. Já os softwares de código aberto (open source) são geralmente gratuitos e podem ser modificados e redistribuídos, desde que respeitem os termos da licença. A licença pode ser vitalícia, por assinatura, ou ainda limitada por tempo ou por número de dispositivos. Ignorar os termos de uma licença pode causar consequências legais, como multas ou proibição de uso. Em resumo, a licença de software é o que regula legalmente o uso de um programa, determinando o que o usuário pode ou não fazer com ele.</p>
+</div>
+
+<div class="so">
+    <h1>O que é software licenciado?</h1>
+    <img src="imagens/imagem 3.png" alt="Software Licenciado">
+    <p>Software licenciado é um programa que só pode ser usado conforme os termos definidos em uma licença, que é um contrato legal entre o desenvolvedor e o usuário. Essa licença estabelece como o software pode ser instalado, usado, copiado, modificado ou distribuído. Existem vários tipos, como: Proprietário: código fechado, uso restrito, sem permissão para modificar ou redistribuir (ex: Windows). Software livre: permite usar, modificar e distribuir, respeitando a licença (ex: GPL). Freeware: gratuito, mas sem alterações permitidas. Shareware: uso gratuito temporário ou limitado, com pagamento depois. A licença pode determinar o número de dispositivos, se é para uso pessoal ou comercial, e se é vitalícia ou por assinatura. Em resumo, software licenciado é aquele cujo uso depende de autorização legal, com regras que o usuário deve seguir.</p>
+</div>
+
+<div class="so">
+    <h1>O que é software livre?</h1>
+    <img src="imagens/imagem 4.jpg" alt="Software Livre">
+    <p>Software livre é um tipo de software que dá ao usuário a liberdade de usar, copiar, estudar, modificar e distribuir o programa e suas versões alteradas, sem restrições. Essas liberdades são garantidas por licenças específicas, como a GPL (General Public License), que asseguram que o código-fonte esteja disponível para todos. O objetivo do software livre é promover a colaboração e o compartilhamento, permitindo que qualquer pessoa possa melhorar o programa, adaptar para suas necessidades e distribuir as mudanças para a comunidade. Isso contribui para a inovação, transparência e segurança, já que o código aberto pode ser analisado por qualquer um. Ao contrário do software proprietário, que tem o código fechado e limitações rígidas quanto ao uso e modificação, o software livre incentiva a participação coletiva e o acesso aberto ao conhecimento. Alguns exemplos famosos de software livre são o sistema operacional Linux, o navegador Firefox e o pacote de escritório LibreOffice. Além disso, o software livre pode ser usado tanto por indivíduos quanto por empresas, muitas vezes reduzindo custos e aumentando a flexibilidade no uso da tecnologia. Resumindo, software livre é um software que respeita a liberdade do usuário, garantindo acesso ao código-fonte e a possibilidade de modificar e distribuir o programa livremente.</p>
+</div>
+
+<div class="so">
+    <h1>O que é software proprietário?</h1>
+    <img src="imagens/imagem 5.jpg" alt="Software Proprietário">
+    <p>Software proprietário é um tipo de software cujo código-fonte é fechado e cujo uso, cópia, modificação e distribuição são restritos pelo detentor dos direitos autorais. Diferente do software livre, o usuário não tem acesso ao código-fonte e não pode alterar o programa nem redistribuí-lo livremente. Esse tipo de software geralmente é comercializado por empresas que vendem licenças de uso, estabelecendo regras claras sobre como e onde o programa pode ser utilizado. As licenças podem limitar o número de instalações, o tempo de uso (assinatura ou licença vitalícia) e o tipo de uso (pessoal, educacional ou comercial). O software proprietário oferece suporte técnico e atualizações frequentemente, mas mantém o controle sobre o código para proteger seus direitos e investimentos. Exemplos comuns são o sistema operacional Windows, o pacote Microsoft Office e muitos jogos comerciais. Embora limite a liberdade do usuário, o software proprietário costuma ser escolhido por sua estabilidade, suporte e funcionalidades específicas. Em resumo, software proprietário é aquele que não permite acesso ao código-fonte e impõe restrições legais ao seu uso, modificação e distribuição, garantindo controle total ao desenvolvedor ou empresa responsável.</p>
+</div>
+
+<div class="so">
+    <h1>O que é software de sistema?</h1>
+    <img src="imagens/imagem 6.jpg" alt="Software de Sistema">
+    <p>Software de sistema é um tipo de software responsável por gerenciar e controlar os recursos do hardware do computador, além de fornecer uma base para que outros programas (softwares aplicativos) possam funcionar...</p>
+</div>
+
+<div class="so">
+    <h1>O que é software aplicativo?</h1>
+    <img src="imagens/imagem 7.jpg" alt="Software Aplicativo">
+    <p>Software aplicativo é um tipo de programa de computador desenvolvido para executar tarefas específicas para o usuário final...</p>
+</div>
+
+<div class="so">
+    <h1>O que é software de programação?</h1>
+    <img src="imagens/imagem 8.jpg" alt="Software de Programação">
+    <p>Software de programação é um conjunto de ferramentas e programas usados por desenvolvedores para criar, testar, depurar e manter outros softwares...</p>
+</div>
+
+<div class="so">
+    <h1>O que é software de diagnóstico de software?</h1>
+    <img src="imagens/imagem 9.jpg" alt="Diagnóstico de Software">
+    <p>Software de diagnóstico de software é um programa criado para identificar, analisar e solucionar problemas em outros softwares ou no próprio sistema operacional...</p>
+</div>
+
+<div class="so">
+    <h1>O que é software diagnóstico de hardware?</h1>
+    <img src="imagens/imagem 10.jpg" alt="Diagnóstico de Hardware">
+    <p>Software diagnóstico de hardware é um programa desenvolvido para identificar, analisar e reportar problemas relacionados aos componentes físicos de um computador ou dispositivo eletrônico...</p>
+</div>
+
+</body>
+</html>

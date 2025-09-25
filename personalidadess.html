@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personalidades</title>
+<style>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec);
+    color: #333;
+    line-height: 1.7;
+    padding: 20px;
+}
+
+/* Título principal */
+h1:first-of-type {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 3em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    gap: 15px;
+}
+#menu a {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+#menu a:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+    background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+}
+
+/* Seções de personalidade */
+.so {
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.so:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Títulos das seções */
+.so h1 {
+    color: #1e3a8a;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.so h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #3b82f6;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Imagens */
+.so img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.so img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Parágrafos */
+.so p {
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+}
+.so p strong {
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .so {
+        padding: 20px;
+    }
+    .so h1 {
+        font-size: 1.7em;
+    }
+    .so img {
+        max-width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<h1>Personalidades</h1>
+
+<div id="menu">
+    <a href="index.html">Início</a>
+    <a href="home.html">Home</a>
+    <a href="personalidadess.html">Personalidades</a>
+    <a href="software.html">Software</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="so.html">SO</a>
+</div>
+
+<div class="so">
+    <h1>Bill Gates</h1>
+    <img src="imagens/bill.avif" alt="Bill Gates">
+    <p>Bill Gates, nascido em 1955, é um empresário, programador e filantropo americano, cofundador da Microsoft, que revolucionou o mercado de computadores pessoais. Após sua carreira na Microsoft, tornou-se um dos maiores filantropos do mundo através da Fundação Bill e Melinda Gates, dedicando-se a resolver problemas globais como doenças e pobreza. <strong>Nascimento e Juventude:</strong> William Henry Gates III nasceu em Seattle, Washington, em 28 de outubro de 1955, filho de um advogado e de uma professora. Com 17 anos, desenvolveu um software com Paul Allen e co-fundou a Traf-o-Data. <strong>A Microsoft:</strong> Fundada em 1975, foi crucial no sucesso do MS-DOS e do IBM PC, e Gates foi essencial no desenvolvimento do Windows. <strong>Filantropia:</strong> Fundação Bill e Melinda Gates, combate à pobreza e doenças globais. <strong>Atualmente:</strong> Investimentos em tecnologia e energia renovável. Gates é considerado um dos maiores empreendedores e filantropos da história.</p>
+</div>
+
+<div class="so">
+    <h1>Steve Jobs</h1>
+    <img src="imagens/linus.webp" alt="Steve Jobs">
+    <p>Steven Paul Jobs foi inventor, empresário e magnata norte-americano, cofundador, presidente e CEO da Apple Inc., revolucionando indústrias como computadores, animação, música, telefones e tablets. Também foi CEO da Pixar e acionista máximo da Disney. Jobs faleceu em 5 de outubro de 2011, aos 56 anos, devido a câncer pancreático. <strong>Carreira:</strong> Desenvolveu o Apple II, Macintosh, NeXT e iMac G3. Após sair da Apple em 1985, fundou a NeXT e retornou em 1996. O filme biográfico "Steve Jobs" (2015) retrata sua vida e conquistas.</p>
+</div>
+
+<div class="so">
+    <h1>Linus Torvalds</h1>
+    <img src="imagens/steve.png" alt="Linus Torvalds">
+    <p>Linus Torvalds nasceu em Helsínquia, Finlândia, em 1969, filho de jornalistas, e começou seu interesse por computadores com um Commodore VIC-20. Criou o Linux, um sistema operacional livre e open source. Linus é casado com Tove Torvalds e tem três filhas. Defende o ateísmo e a liberdade de software, tendo se tornado cidadão americano em 2010. Sua contribuição para tecnologia e software livre é mundialmente reconhecida.</p>
+</div>
+
+</body>
+</html>

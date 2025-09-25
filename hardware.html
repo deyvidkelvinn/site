@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hardware - Conheça os Componentes</title>
+  <style>
+    /* Reset e estilo base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0e7ff, #f4f4f9);
+      color: #222;
+      line-height: 1.6;
+      padding: 30px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #3366ff;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 3px rgba(51, 102, 255, 0.5);
+    }
+
+    nav#menu {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    nav#menu a {
+      background-color: #3366ff;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(51, 102, 255, 0.3);
+      transition: background-color 0.3s ease, transform 0.25s ease;
+    }
+
+    nav#menu a:hover {
+      background-color: #254eda;
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(37, 78, 218, 0.5);
+    }
+
+    main {
+      max-width: 1200px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+
+    section.componente {
+      background: white;
+      border-radius: 15px;
+      padding: 25px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    section.componente:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    section.componente h2 {
+      color: #264dff;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    section.componente img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 15px rgba(51, 102, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    section.componente img:hover {
+      transform: scale(1.1);
+    }
+
+    section.componente p {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    section.componente p strong {
+      color: #3366ff;
+    }
+
+    a.buy-link {
+      display: inline-block;
+      margin-top: 15px;
+      background: #ff6600;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 4px 15px rgba(255, 102, 0, 0.5);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.buy-link:hover {
+      background-color: #cc5200;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(204, 82, 0, 0.7);
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      nav#menu {
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Hardware</h1>
+    <nav id="menu">
+      <a href="index.html">Início</a>
+      <a href="home.html">Home</a>
+      <a href="personalidadess.html">Personalidades</a>
+      <a href="software.html">Software</a>
+      <a href="hardware.html">Hardware</a>
+      <a href="so.html">SO</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="componente" id="cpu">
+      <h2>CPU</h2>
+      <img src="imagens/CPU.jpg" alt="Imagem da CPU" />
+      <p>A <strong>CPU</strong> é o “cérebro” do computador. Ela executa as instruções dos programas, realiza cálculos e controla as operações dos demais componentes. É composta por núcleos que processam dados em alta velocidade, e sua eficiência impacta diretamente no desempenho geral do sistema.</p>
+    </section>
+
+    <section class="componente" id="armazenamento">
+      <h2>Armazenamento</h2>
+      <img src="imagens/armazenamento.webp" alt="Imagem de Armazenamento" />
+      <p>O armazenamento é onde os dados e programas são guardados para uso imediato ou futuro. Pode ser permanente, como discos rígidos (HDD) e unidades de estado sólido (SSD), ou temporário, como a memória cache. O tipo e a capacidade do armazenamento influenciam a velocidade de acesso aos dados e a quantidade de informações que o computador pode guardar.</p>
+    </section>
+
+    <section class="componente" id="memoria">
+      <h2>Memória</h2>
+      <img src="imagens/memória.jpg" alt="Imagem de Memória RAM" />
+      <p>A memória temporária do computador armazena dados que estão sendo processados ativamente, como a memória RAM. Ela é essencial para que os programas funcionem rapidamente e sem travamentos, influenciando diretamente no desempenho do sistema.</p>
+    </section>
+
+    <section class="componente" id="fonte">
+      <h2>Fonte de alimentação</h2>
+      <img src="imagens/fontee.jpg" alt="Imagem da Fonte de Alimentação" />
+      <p>A fonte de alimentação converte a energia elétrica da tomada em energia utilizável pelo computador, distribuindo voltagens adequadas para cada componente interno. Ela garante o funcionamento estável e seguro do sistema, protegendo contra variações de energia.</p>
+    </section>
+
+    <section class="componente" id="teclado">
+      <h2>Teclado</h2>
+      <img src="imagens/teclado.jpg" alt="Imagem de Teclado" />
+      <p>Dispositivo de entrada usado para digitar texto, comandos e controlar o computador. Possui teclas alfanuméricas, funcionais e especiais que permitem a interação com o sistema.</p>
+    </section>
+
+    <section class="componente" id="monitor">
+      <h2>Monitor de vídeo</h2>
+      <img src="imagens/monitor.jpg" alt="Imagem de Monitor" />
+      <p>Dispositivo de saída que exibe imagens, vídeos e informações visuais geradas pelo computador. Pode ser LCD, LED, OLED, entre outros tipos, com diferentes tamanhos e resoluções.</p>
+    </section>
+
+    <section class="componente" id="mouse">
+      <h2>Mouse</h2>
+      <img src="imagens/mouse.jpg" alt="Imagem de Mouse" />
+      <p>Dispositivo de entrada que permite ao usuário controlar o cursor na tela, facilitando a navegação e a execução de comandos por meio de movimentos e cliques.</p>
+    </section>
+
+    <section class="componente" id="impressora">
+      <h2>Impressora</h2>
+      <img src="imagens/impressora.jpg" alt="Imagem de Impressora" />
+      <p>Equipamento que transforma documentos digitais em cópias físicas, imprimindo texto e imagens em papel. Pode ser jato de tinta, laser, térmica, entre outros tipos.</p>
+    </section>
+    
+    <section class="componente" id="plotter">
+      <h2>Plotter</h2>
+      <img src="imagens/plotter.jpg" alt="Imagem de Plotter" />
+      <p>Dispositivo de saída utilizado para impressão de desenhos técnicos, plantas e gráficos em grande escala, muito usado em engenharia, arquitetura e design.</p>
+    </section>
+
+    <section class="componente" id="scanner">
+      <h2>Scanner</h2>
+      <img src="imagens/scanner.jpg" alt="Imagem de Scanner" />
+      <p>Dispositivo que digitaliza documentos e imagens, convertendo-os em arquivos digitais para armazenamento, edição ou compartilhamento.</p>
+    </section>
+
+    <section class="componente" id="gabinete">
+      <h2>Gabinete</h2>
+      <img src="imagens/gabinete.webp" alt="Imagem de Gabinete" />
+      <p>Carcaça que abriga os componentes internos do computador, protegendo-os contra poeira, impactos e facilitando a organização e ventilação dos componentes.</p>
+    </section>
+
+    <section class="componente" id="webcam">
+      <h2>Web Cam</h2>
+      <img src="imagens/web.jpg" alt="Imagem de Web Cam" />
+      <p>Dispositivo que captura imagens e vídeos em tempo real, muito utilizado para videochamadas, streaming e gravações.</p>
+    </section>
+
+    <section class="componente" id="caixas-som">
+      <h2>Caixas de som</h2>
+      <img src="imagens/caixasdesom.jpg" alt="Imagem de Caixas de Som" />
+      <p>Dispositivos de saída que reproduzem áudio, permitindo ao usuário ouvir sons, músicas, vídeos e outros conteúdos sonoros gerados pelo computador.</p>
+    </section>
+
+    <section class="componente" id="microfone">
+      <h2>Microfone</h2>
+      <img src="imagens/mic.jpg" alt="Imagem de Microfone" />
+      <p>Dispositivo de entrada que capta sons do ambiente, permitindo gravações de voz, comunicação por áudio e reconhecimento de voz.</p>
+    </section>
+
+    <section class="componente" id="headset">
+      <h2>Headset</h2>
+      <img src="imagens/headset.jpg" alt="Imagem de Headset" />
+      <p>Conjunto que combina fones de ouvido com microfone integrado, usado para comunicação, jogos, gravações e audição de áudio com privacidade.</p>
+    </section>
+
+    <section class="componente" id="interfaces-sem-fio">
+      <h2>Interfaces sem fio</h2>
+      <img src="imagens/interfacesemfio.jpg" alt="Imagem de Interfaces sem fio" />
+      <p>Conexões que permitem a comunicação entre dispositivos sem cabos físicos. Exemplos incluem Wi-Fi e Bluetooth, usados para acessar redes, transferir dados e conectar periféricos.</p>
+    </section>
+
+    <section class="componente" id="audio">
+      <h2>Áudio</h2>
+      <img src="imagens/audio.jpg" alt="Imagem de Interface de Áudio" />
+      <p>Interface que permite a entrada e saída de sinais sonoros. Entradas de áudio recebem sons através de microfones, enquanto as saídas enviam áudio para caixas de som ou fones de ouvido.</p>
+    </section>
+
+    <section class="componente" id="rede">
+      <h2>Rede (Ethernet)</h2>
+      <img src="imagens/rede.jpg" alt="Imagem de Interface de Rede" />
+      <p>Interface física usada para conectar computadores a redes locais (LAN) via cabo, proporcionando conexão estável e rápida para troca de dados.</p>
+    </section>
+
+    <section class="componente" id="vga">
+      <h2>VGA</h2>
+      <img src="imagens/vga.jpg" alt="Imagem de Interface VGA" />
+      <p>Interface de vídeo analógica que conecta computadores a monitores ou projetores, com resolução limitada comparada às interfaces digitais.</p>
+    </section>
+
+    <section class="componente" id="hdmi">
+      <h2>HDMI</h2>
+      <img src="imagens/hdmi.jpg" alt="Imagem de Interface HDMI" />
+      <p>Interface digital que transmite áudio e vídeo em alta definição entre dispositivos, suportando alta qualidade em um único cabo.</p>
+    </section>
+
+    <section class="componente" id="usb">
+      <h2>USB</h2>
+      <img src="imagens/usb.jpg" alt="Imagem de Interface USB" />
+      <p>Interface amplamente usada para conectar periféricos ao computador, oferecendo alta velocidade de transferência e fornecimento de energia.</p>
+    </section>
+  </main>
+</body>
+
+</html>
